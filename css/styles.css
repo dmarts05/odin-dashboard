@@ -61,7 +61,7 @@ i:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 41px;
+  padding: 36.5px 41px;
 }
 
 .header > div:last-child {
@@ -73,7 +73,7 @@ i:hover {
 
 .header .logo {
   position: absolute;
-  left: 36px;
+  left: 36.5px;
   width: 45px;
   transition: all 0.25s;
 }
