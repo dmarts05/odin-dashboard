@@ -2,6 +2,7 @@
 
 :root {
   --base-color: white;
+  --base-dark-color: #f5f7f9;
   --base-darker-color: #e6e6e6;
   --accent-color: #438ffe;
   --title-text-color: #160e4d;
@@ -19,11 +20,15 @@
 .wrapper {
   height: 100vh;
   display: grid;
-  grid-template: 1fr 8fr / 1fr 8fr;
+  grid-template: 1fr 8fr / 120px 8fr;
+}
+
+img {
+  cursor: pointer;
 }
 
 i {
-  font-size: 1.25em;
+  font-size: 1.25rem;
   color: var(--icon-color);
   cursor: pointer;
   transition: all 0.25s;
@@ -37,12 +42,85 @@ i:hover {
   color: var(--accent-color);
 }
 
+.profile-picture {
+  border-radius: 50%;
+}
+
 /* Header Styling */
 
 .header {
+  position: relative;
   grid-row: 1;
   grid-column: 1 / -1;
-  border-bottom: 2px solid var(--base-darker-color);
+  border-bottom: 3px solid var(--base-darker-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 41px;
+}
+
+.header > div:last-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .logo {
+  position: absolute;
+  left: 36px;
+  width: 45px;
+  transition: all 0.25s;
+}
+
+.header .logo:hover {
+  transform: scale(1.1);
+}
+
+.header .profile-picture {
+  width: 35px;
+}
+
+.header .search-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: 78px;
+}
+
+#search {
+  width: clamp(150px, 30vw, 400px);
+  outline: none;
+  background-color: var(--base-dark-color);
+  padding: 8px;
+  padding-left: 16px;
+  border: 1px solid var(--base-dark-color);
+  border-radius: 25px 0 0 25px;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+}
+
+#search:focus {
+  border: 1px solid var(--accent-color);
+}
+
+button[type="submit"] {
+  padding: 7.5px;
+  padding-right: 9.5px;
+  border: none;
+  border-radius: 0 25px 25px 0;
+  background-color: var(--accent-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button[type="submit"] i {
+  color: var(--base-color);
+  transform: scale(0.9);
+}
+
+button[type="submit"] i:hover {
+  transform: scale(1);
 }
 
 /* Sidebar Styling */
