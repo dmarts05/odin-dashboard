@@ -1,5 +1,11 @@
 /* General Styling */
 
+:root {
+  --base-color: white;
+  --base-dark-color: #f8f8f8;
+  --accent-color: #438ffe;
+}
+
 * {
   margin: 0;
   padding: 0;
