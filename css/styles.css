@@ -44,6 +44,11 @@ i:hover {
 
 .profile-picture {
   border-radius: 50%;
+  transition: all 0.25s;
+}
+
+.profile-picture:hover {
+  filter: brightness(130%);
 }
 
 /* Header Styling */
