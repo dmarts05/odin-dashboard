@@ -23,6 +23,8 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
     />
+    <!-- JS -->
+    <script src="js/app.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -66,7 +68,11 @@
         <!-- Dashboard Header -->
         <header class="dashboard-header">
           <div class="profile">
-            <img class="profile-picture" src="img/profile-picture.jpg" alt="Profile Picture" />
+            <img
+              class="profile-picture"
+              src="img/profile-picture.jpg"
+              alt="Profile Picture"
+            />
             <p>Hi there,<br /><span>KMP (@kingmineplay)</span></p>
           </div>
           <div class="action-btns">
@@ -183,25 +189,51 @@
         <!-- Dashboard Trending Section -->
         <section class="dashboard-trending">
           <h2>Trending</h2>
-          <div class="trend">
-            <img src="" alt="Profile Picture" />
-            <h4>@user</h4>
-            <p>Brief Description</p>
-          </div>
-          <div class="trend">
-            <img src="" alt="Profile Picture" />
-            <h4>@user</h4>
-            <p>Brief Description</p>
-          </div>
-          <div class="trend">
-            <img src="" alt="Profile Picture" />
-            <h4>@user</h4>
-            <p>Brief Description</p>
-          </div>
-          <div class="trend">
-            <img src="" alt="Profile Picture" />
-            <h4>@user</h4>
-            <p>Brief Description</p>
+          <div class="trends-wrapper">
+            <div class="trend">
+              <img
+                class="profile-picture"
+                src="img/generic-profile-picture.png"
+                alt="Profile Picture"
+              />
+              <div>
+                <h4>@username</h4>
+                <p>Incredibly awesome description</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img
+                class="profile-picture"
+                src="img/generic-profile-picture.png"
+                alt="Profile Picture"
+              />
+              <div>
+                <h4>@username</h4>
+                <p>Incredibly awesome description</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img
+                class="profile-picture"
+                src="img/generic-profile-picture.png"
+                alt="Profile Picture"
+              />
+              <div>
+                <h4>@username</h4>
+                <p>Incredibly awesome description</p>
+              </div>
+            </div>
+            <div class="trend">
+              <img
+                class="profile-picture"
+                src="img/generic-profile-picture.png"
+                alt="Profile Picture"
+              />
+              <div>
+                <h4>@username</h4>
+                <p>Incredibly awesome description</p>
+              </div>
+            </div>
           </div>
         </section>
       </main>
