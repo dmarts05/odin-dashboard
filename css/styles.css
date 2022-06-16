@@ -120,6 +120,7 @@ i:hover {
   border-radius: 25px 0 0 25px;
   color: var(--accent-color);
   font-size: 0.9rem;
+  font-weight: 500;
 }
 
 #search:focus {
