@@ -89,7 +89,7 @@ i:hover {
 .header .search-wrapper {
   display: flex;
   align-items: center;
-  margin-left: 128px;
+  margin-left: 108px;
 }
 
 #search {
@@ -167,11 +167,11 @@ button[type='submit'] i:hover {
   display: grid;
   grid-template: 0.5fr 2fr 2fr / 3fr 1fr;
   gap: 28px;
-  padding: 58px;
+  padding: 38px;
   background-color: var(--base-dark-color);
 }
 
-/* Dashbaord Header */
+/* Dashboard Header */
 
 .dashboard-header {
   grid-row: 1;
@@ -179,6 +179,8 @@ button[type='submit'] i:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 38px;
+  border-bottom: 3px solid var(--base-darker-color);
 }
 
 .dashboard-header .profile {
@@ -221,9 +223,19 @@ button[type='submit'] i:hover {
   border: 3px solid var(--accent-color);
 }
 
+/* Dashboard Projects */
+
 .dashboard-projects {
   grid-row: 2 / -1;
   grid-column: 1;
+}
+
+.dashboard h2 {
+  margin-bottom: 28px;
+}
+
+.dashboard h3, .dashboard h4 {
+  margin-bottom: 8px;
 }
 
 .dashboard-projects .card-wrapper {
