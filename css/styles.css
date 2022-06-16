@@ -144,7 +144,7 @@ button[type='submit'] i:hover {
 }
 
 .sidebar::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -3px;
   left: 0;
@@ -164,19 +164,61 @@ button[type='submit'] i:hover {
 .dashboard {
   grid-row: 2;
   grid-column: 2;
-}
-
-.dashboard {
   display: grid;
-  grid-template: 1fr 2fr 2fr / 3fr 1fr;
-  gap: 58px;
+  grid-template: 0.5fr 2fr 2fr / 3fr 1fr;
+  gap: 28px;
   padding: 58px;
   background-color: var(--base-dark-color);
 }
 
+/* Dashbaord Header */
+
 .dashboard-header {
   grid-row: 1;
   grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header .profile {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.dashboard-header .profile span {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.dashboard-header .profile-picture {
+  width: 100px;
+}
+
+.dashboard-header .action-btns {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 22px;
+}
+
+.dashboard-header .action-btns button {
+  padding: 8px;
+  width: clamp(70px, 8vw, 120px);
+  background-color: var(--accent-color);
+  color: var(--base-color);
+  border: 3px solid var(--accent-color);
+  border-radius: 20px;
+  font-weight: 500;
+  transition: all 0.25s;
+  cursor: pointer;
+}
+
+.dashboard-header .action-btns button:hover {
+  background-color: var(--base-color);
+  color: var(--accent-color);
+  border: 3px solid var(--accent-color);
 }
 
 .dashboard-projects {
