@@ -265,14 +265,17 @@ button[type='submit'] i:hover {
   flex-direction: column;
   gap: 8px;
   background-color: var(--base-color);
-  padding: 28px;
+  padding: 24px;
   border-radius: 10px;
   border-left: 8px solid var(--accent-color);
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
+
 }
 
 .dashboard-projects .card .card-btns {
   display: flex;
   gap: 8px;
+  margin-top: 12px;
   align-items: center;
   justify-content: end;
 }
@@ -289,8 +292,9 @@ button[type='submit'] i:hover {
   flex-direction: column;
   gap: 8px;
   background-color: var(--base-color);
-  padding: 28px;
+  padding: 24px;
   border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.1) 0px 7px 29px 0px;
 }
 
 .dashboard-announcements .announcement:not(:last-child) {
@@ -305,6 +309,8 @@ button[type='submit'] i:hover {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Dashboard Trending */
 
 .dashboard-trending {
   grid-row: 3;
